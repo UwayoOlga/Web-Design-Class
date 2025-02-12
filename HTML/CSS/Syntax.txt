@@ -1,0 +1,12 @@
+
+
+The CSS syntax ; - Selector
+                 - Element properties
+                 - Style values
+
+Ways to include CSS codes in HTML
+---------------------------------
+
+1. Inline CSS; used in the tags 
+2. Internal CSS; all CSS codes are put iin head using style tages
+3. External CSS; CSS codes are put in a separate file with .css extension and linked to the HTML file using link tag
