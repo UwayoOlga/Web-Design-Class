@@ -1,12 +1,12 @@
 p{
-    border: dashed orange;
+    border: dashed lightcoral;
     
 }
 
 #wed{
     color: white;
     background-color: black;
-    border: dashed orange;
+    border: dashed lightcoral;
     border-radius: 20px;
 }
 
