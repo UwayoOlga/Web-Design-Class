@@ -14,7 +14,7 @@ p{
     border: 10px solid transparent;
     padding: 15px;
     border-image: url(pic5.jpg) 20 round;
-   
+
 }
 a:link{
     color: red;
@@ -24,4 +24,10 @@ a:link{
 a:active{
     color: white;
     background-color: black;
+}
+
+a:visited{
+    border:solid pink;
+    color: black;
+    background-color: aqua;
 }
