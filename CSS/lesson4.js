@@ -1,5 +1,5 @@
  
-     
+        alert("Click ok to continue");
        var name= prompt("Enter your name to continue");
        if (name=="peter"){
         var a=20;
@@ -11,5 +11,6 @@
         document.write('<a href="wednesday12th.html">Click here</a>');
        }
        else{
-         
-       } 
+        alert("Please enter the correct name")
+       }
+    
