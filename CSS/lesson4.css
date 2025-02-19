@@ -18,4 +18,10 @@ p{
 }
 a:link{
     color: red;
+    background-color: yellow;
+
+}
+a:active{
+    color: white;
+    background-color: black;
 }
