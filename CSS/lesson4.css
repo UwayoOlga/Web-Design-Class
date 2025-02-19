@@ -1,8 +1,18 @@
 p{
     border: dashed orange;
+    
 }
 
 #wed{
     color: white;
     background-color: black;
+    border: dashed orange;
+    border-radius: 20px;
+}
+
+.today{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(pic5.jpg) 20 round;
+   
 }

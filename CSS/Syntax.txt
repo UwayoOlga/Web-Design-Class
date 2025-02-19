@@ -10,3 +10,10 @@ Ways to include CSS codes in HTML
 1. Inline CSS; used in the tags 
 2. Internal CSS; all CSS codes are put in head using style tages
 3. External CSS; CSS codes are put in a separate file with .css extension and linked to the HTML file using link tag
+
+pseudo Selector
+-----------------
+
+a: link (it is a link before it is visited)
+a: active (it is a link when it is clicked and being visited)
+a: visited (a link which is already visited)
