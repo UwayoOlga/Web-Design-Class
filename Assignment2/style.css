@@ -15,6 +15,7 @@ body {
   /* Navigation Menu */
   .nav-menu {
     display: flex;
+    background-color: black;
     justify-content: space-between;
     padding: 10px 0;
   }
@@ -46,11 +47,15 @@ body {
   }
   
   .sidebar {
-    width: 250px;
+    width: 330px;
     padding: 10px;
     border-right: 1px solid #004488;
   }
-  
+.sidebarImage{
+    height: 500px;
+    width: 300px;
+    padding-top: 40px;
+}
   .main-content {
     flex: 1;
     background-color: white;
@@ -114,7 +119,7 @@ body {
   /* Social Media Section */
   .social-media {
     padding: 10px;
-    color: white;
+    color: black;
     text-align: center;
   }
   
@@ -135,6 +140,6 @@ body {
   }
   
   .social-table a {
-    color: white;
+    color: bl;
     text-decoration: none;
   }
