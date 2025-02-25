@@ -1,101 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>online selling</title>
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Sales Online Market</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #003366;
+      background-image: url('blue-bg-texture.jpg');
+      background-repeat: repeat;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+      display: flex;
+      justify-content: space-between;
+      background-color: #000;
+      padding: 10px 0;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      padding: 0 20px;
+      font-weight: bold;
+    }
+
+    /* Header Banner */
+    .header-banner {
+      background-color: #00cc33;
+      color: white;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Main Content */
+    .content-wrapper {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #003366;
+      padding: 10px;
+      border-right: 1px solid #004488;
+    }
+
+    .main-content {
+      flex: 1;
+      background-color: white;
+    }
+
+    /* Product Section */
+    .product-section {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .product-image {
+      width: 150px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    .product-info {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .product-name {
+      color: white;
+      background-color: #003366;
+      padding: 5px;
+      margin-top: 0;
+    }
+
+    /* Registration Form */
+    .registration-form {
+      padding: 20px;
+    }
+
+    .form-table {
+      width: 100%;
+    }
+
+    .form-table td {
+      padding: 5px;
+    }
+
+    .form-table input[type="text"],
+    .form-table input[type="password"] {
+      width: 200px;
+    }
+
+    .form-buttons {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .form-buttons input {
+      margin: 0 5px;
+    }
+
+    /* Social Media Section */
+    .social-media {
+      padding: 10px;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+    }
+
+    .social-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .social-table td {
+      border: 1px solid white;
+      padding: 10px;
+      width: 25%;
+    }
+
+    .social-table img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .social-table a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-   <table class="header-table">
-       <tr>
-           <td align="center">Home</td>
-           <td align="center">Finance</td>
-           <td align="center">Products</td>
-           <td align="center">Address</td>
-           <td align="center">Help</td>
-           <td align="center">Contact Us</td>
-       </tr>
-   </table>
+  <div class="container">
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Finance</a>
+      <a href="#">Products</a>
+      <a href="#">Address</a>
+      <a href="#">Help</a>
+      <a href="#">Contact Us</a>
+    </div>
 
+    <!-- Header Banner -->
+    <div class="header-banner">
+      PRODUCT SALES ONLINE MARKET
+    </div>
 
-   <table class="hero-image-table">
-    <tr>
-        <td align="center">
-            <img src="production online.jpeg" alt="header background" width="100%" height="200">
-        </td>
-    </tr>
- </table>
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <img src="nursing-clothes.jpg" alt="Best Nursing Clothes" width="230">
+      </div>
 
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <!-- Golden Coat Product -->
+        <div class="product-section">
+          <div class="product-image">
+            <h3 class="product-name">Golden Coat</h3>
+            <img src="golden-coat.jpg" alt="Golden Coat" width="120">
+          </div>
+          <div class="product-info">
+            <h3>Start selling online</h3>
+            <p>Easily sell online and ship orders to customers, offer click and collect and local delivery—no matter what type of business you have. Plus, sell on Instagram.</p>
+            <h4>Other products:</h4>
+            <ul>
+              <li>T-Shirts</li>
+              <li>Handcashiefs</li>
+              <li>Shoes</li>
+              <li>Tablets</li>
+              <li>ets...</li>
+            </ul>
+          </div>
+        </div>
 
-   <table class="main-content-table">
-       <tr>
-           <td class="clothes-image-cell">
-               <img src="clothes.jpeg" alt="clothes collection" width="100%">
-           </td>
-           <td>
-               <table class="product-info-table">
-                   <tr>
-                       <td class="golden-coat-cell">
-                           <div class="golden-coat-title">Golden Coat</div>
-                           <img src="golden_coat.jpg" alt="Golden Coat" width="150">
-                       </td>
-                       <td class="product-info-text-cell">
-                           <div class="product-info">
-                               <h2>Start selling online</h2>
-                               <p>Easily sell online and ship orders to customers, offer click and collect and local delivery-no matter what type of business you have. Plus, sell on Instagram.</p>
+        <!-- Smart Coat Product with Registration Form -->
+        <div class="product-section">
+          <div class="product-image">
+            <h3 class="product-name">Smart Coat</h3>
+            <img src="smart-coat.jpg" alt="Smart Coat" width="120">
+          </div>
+          <div class="product-info">
+            <p>If you need some from these products please fill the form to register</p>
+            <div class="registration-form">
+              <table class="form-table">
+                <tr>
+                  <td align="right">First-Name:</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td align="right">Last-Name:</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td align="right">Address:</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td align="right">Telephone:</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td align="right">User-Name:</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td align="right">Password:</td>
+                  <td><input type="password"></td>
+                </tr>
+              </table>
+              <div class="form-buttons">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-                               <h3>Other products:</h3>
-                               <ul>
-                                   <li>T-Shirts</li>
-                                   <li>Handkerchiefs</li>
-                                   <li>Shoes</li>
-                                   <li>Tablets</li>
-                                   <li>etc.</li>
-                               </ul>
-
-
-                               <p>If you need some from these products please fill the form to register</p>
-                               <form>
-                                   First-Name: <input type="text" name="fname"><br>
-                                   Last-Name: <input type="text" name="lname"><br>
-                                   Address: <input type="text" name="address"><br>
-                                   Telephone: <input type="text" name="phone"><br>
-                                   User-Name: <input type="text" name="uname"><br>
-                                   Password: <input type="password" name="password"><br>
-                                   <input type="submit" value="Submit">
-                               </form>
-                           </div>
-                       </td>
-                   </tr>
-                   <tr>
-                       <td class="smart-coat-cell">
-                           <div class="smart-coat-title">Smart Coat</div>
-                           <img src="smart_coat.jpg" alt="Smart Coat" width="150">
-                       </td>
-                       <td>
-                           <table class="contact-us-table">
-                               <tr>
-                                   <td align="center">
-                                       <h3>Contact us from the following Social Media:</h3>
-                                       <table class="social-media-table">
-                                           <tr>
-                                               <td align="center">Facebook<br><img src="facebook_icon.png" alt="Facebook Icon"> engineering_info</td>
-                                               <td align="center">Tweeter<br><img src="twitter_icon.png" alt="Twitter Icon"> eng_info</td>
-                                               <td align="center">Instagram<br><img src="instagram_icon.png" alt="Instagram Icon"> engineering_info</td>
-                                               <td align="center">Gmail<br><img src="gmail_icon.png" alt="Gmail Icon"> enginfo@email.com</td>
-                                           </tr>
-                                       </table>
-                                   </td>
-                               </tr>
-                           </table>
-                       </td>
-                   </tr>
-               </table>
-           </td>
-       </tr>
-   </table>
+        <!-- Social Media Section -->
+        <div class="social-media">
+          <h3>Contact us from the following social Media:</h3>
+          <table class="social-table">
+            <tr>
+              <td>
+                Facebook
+                <br>
+                <img src="facebook-icon.jpg" alt="Facebook" width="30">
+                <a href="#">engineering_info</a>
+              </td>
+              <td>
+                Tweeter
+                <br>
+                <img src="twitter-icon.jpg" alt="Twitter" width="30">
+                <a href="#">#eng_info</a>
+              </td>
+              <td>
+                Instagram
+                <br>
+                <img src="instagram-icon.jpg" alt="Instagram" width="30">
+                <a href="#">engineering_info</a>
+              </td>
+              <td>
+                Gmail
+                <br>
+                <img src="gmail-icon.jpg" alt="Gmail" width="30">
+                <a href="mailto:enginfo@gmail.com">enginfo@gmail.com</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-
