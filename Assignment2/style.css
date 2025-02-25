@@ -4,19 +4,24 @@ body {
     font-family: "Times New Roman", Times, serif;
     background-image: url('backgroundimage.jpeg');
     background-repeat: repeat;
+    overflow: hidden; /* Prevent scrolling */
 }
   
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
   
 .nav-menu {
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 5px 0;
+    height: 5vh;
 }
   
 .nav-menu a {
@@ -24,75 +29,102 @@ body {
     text-decoration: none;
     padding: 0 20px;
     font-weight: bold;
+    font-size: 0.9em;
 }
   
 .header-banner {
     padding: 0;
-    margin-bottom: 10px;
-    height: 50px;  
+    margin: 0;
+    height: 4vh;
     overflow: hidden;
     text-align: center;
 }
   
 .banner-image {
     width: 100%;
-    height: 50px;  
-    object-fit: cover;  
+    height: 100%;
+    object-fit: cover;
 }
 
 .content-wrapper {
     display: flex;
+    height: 81vh; /* Adjusted to ensure all content fits in viewport */
 }
   
 .sidebar {
-    width: 330px;
-    padding: 10px;
+    width: 25%;
     border-right: 1px solid #004488;
+    padding: 0;
 }
 
 .sidebarImage {
-    height: 500px;
-    width: 300px;
-    padding-top: 40px;
+    height: 80%;
+    width: 80%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .main-content {
-    flex: 1;
-   
+    width: 75%;
+    display: flex;
+    flex-direction: column;
 }
   
 .product-section {
     display: flex;
     border-bottom: 1px solid #ccc;
     background-color: transparent;
+    height: 50%;
 }
   
 .product-image {
-    width: 150px;
-    padding: 10px;
+    width: 140px;
+    padding: 5px;
     text-align: center;
-    background-color: transparent; 
+    background-color: transparent;
 }
   
 .product-image img {
     max-width: 100%;
+    max-height: 120px;
     border: 1px solid #ccc;
+    object-fit: contain;
 }
   
 .product-info {
     flex: 1;
-    padding: 10px;
-    background-color: white; 
-    color: black; 
+    padding: 8px;
+    background-color: white;
+    color: black;
+    font-size: 0.9em;
+    overflow: hidden;
 }
+
+.product-info h3, .product-info h4 {
+    margin: 5px 0;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.product-info ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
 .product-name {
     color: white;
-    padding: 5px;
-    margin-top: 0;
+    padding: 3px;
+    margin: 0;
+    font-size: 1em;
 }
   
 .registration-form {
-    padding: 20px;
+    padding: 5px;
 }
   
 .form-table {
@@ -100,54 +132,62 @@ body {
 }
   
 .form-table td {
-    padding: 5px;
+    padding: 2px;
 }
   
 .form-table input[type="text"],
 .form-table input[type="password"] {
-    width: 200px;
+    width: 180px;
+    height: 18px;
 }
   
 .form-buttons {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
 }
   
 .form-buttons input {
     margin: 0 5px;
+    padding: 2px 8px;
 }
   
 .social-media {
-    padding: 10px;
-    color: white; 
+    padding: 5px;
+    color: white;
     text-align: center;
-    background-color: transparent; 
+    background-color: transparent;
+    height: 10vh;
 }
 
 .social-media h3 {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 5px 0;
+    font-size: 0.9em;
 }
   
 .social-table {
     width: 100%;
     border-collapse: collapse;
+    height: 80%;
 }
   
 .social-table td {
     border: 1px solid white;
-    padding: 10px;
+    padding: 5px;
     width: 25%;
+    font-size: 0.8em;
 }
   
 .social-table img {
     vertical-align: middle;
-    margin-right: 10px;
-    border: 2px solid white; 
-    padding: 2px; 
+    margin-right: 5px;
+    border: 1px solid white;
+    padding: 1px;
+    width: 20px;
+    height: 20px;
 }
   
 .social-table a {
-    color: white; 
+    color: white;
     text-decoration: none;
+    font-size: 0.8em;
 }

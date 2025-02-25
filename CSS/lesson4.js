@@ -1,5 +1,5 @@
  
-        alert("Click ok to continue");
+       alert("Click ok to continue");
        var name= prompt("Enter your name to continue");
        if (name=="peter"){
         var a=20;
