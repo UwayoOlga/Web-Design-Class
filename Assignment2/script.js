@@ -1,4 +1,6 @@
+
 document.addEventListener('DOMContentLoaded', function() {
+    
     const links = document.querySelectorAll('.social-table a');
   
     links.forEach(link => {
