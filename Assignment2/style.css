@@ -89,8 +89,7 @@ body {
   
 .product-image img {
     max-width: 100%;
-    max-height: 120px;
-    border: 1px solid #ccc;
+    max-height: 120px; 
     object-fit: contain;
 }
   
@@ -150,13 +149,13 @@ body {
     margin: 0 5px;
     padding: 2px 8px;
 }
-  
+
 .social-media {
     padding: 5px;
     color: white;
     text-align: center;
     background-color: transparent;
-    height: 10vh;
+    height: 10vh; 
 }
 
 .social-media h3 {
@@ -166,28 +165,37 @@ body {
   
 .social-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;  
+    background-color: white;
+    color: black;
     height: 80%;
+    border-width: 2px;
+    border-image: url('backgroundimage.jpeg') 20 round;
 }
   
-.social-table td {
-    border: 1px solid white;
+.social-table td { 
+    border-width: 1px;
+    border-image: url('backgroundimage.jpeg') 10 round;
+    border-style: solid;  
+    border-color: transparent;  
     padding: 5px;
     width: 25%;
     font-size: 0.8em;
+    text-align: left; 
+    font-weight: bold;
 }
   
 .social-table img {
     vertical-align: middle;
     margin-right: 5px;
-    border: 1px solid white;
     padding: 1px;
     width: 20px;
     height: 20px;
 }
   
 .social-table a {
-    color: white;
+    color: blue;
     text-decoration: none;
     font-size: 0.8em;
 }
