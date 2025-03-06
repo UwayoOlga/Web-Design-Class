@@ -1,0 +1,79 @@
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Navigation links */
+.nav-links {
+    text-align: left;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Logo Styling */
+.logo {
+    text-align: right;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Content Table */
+.content-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Image Column */
+.image-column img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Text Column */
+.text-column h2 {
+    margin: 0;
+}
+
+.text-column p {
+    font-size: 14px;
+}
+
+/* Form Column */
+.form-column {
+    text-align: center;
+}
+
+.form-column input {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.form-column button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-column button:hover {
+    background-color: #0056b3;
+}
