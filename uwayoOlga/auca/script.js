@@ -11,12 +11,5 @@ function check(){
        alert("Please enter the correct values as you defined");
     }
    }
-   
-   
-   function Calculate(){
-       var product = document.getElementById("total").value;
-       var Price = document.getElementById("unit").value;
-       var Answer = product * Price;
-       document.write(Answer);
-   }
+    
    
