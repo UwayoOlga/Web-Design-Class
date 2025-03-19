@@ -4,7 +4,7 @@
     var mid= parseInt(document.getElementById('term').value);
     var fin= parseInt(document.getElementById('exam').value);
     var sum=act + mid + fin;
-    document.write(sum);
+    document.getElementById('result').value = sum;
 
  }
 
@@ -13,22 +13,25 @@
     var mid= parseInt(document.getElementById('term').value);
     var fin= parseInt(document.getElementById('exam').value);
     var average=(act + mid + fin)/3;
-    document.write(average);
+    document.getElementById('result').value = average;
  }
  function grade() {
     var act = parseInt(document.getElementById('class').value);
     var mid = parseInt(document.getElementById('term').value);
-    var fin = parseInt(document.getElementById('exam').value);
-    var average = (act + mid + fin) / 3;
-    if (average > 80 && average <= 100) {
-        document.write('A');
-    } else if (average > 70 && average <= 80) {
-        document.write('B');
-    } else if (average > 60 && average <= 70) {
-        document.write('C');
-    } else if (average > 50 && average <= 60) {
-        document.write('D');
+    var fin = parseInt(document.getElementById('exam').value); 
+
+    var sum = act + mid + fin;  
+ 
+    if (sum >= 80 && sum <= 100) {  
+        document.getElementById('result').value = 'A';
+    } else if (sum >= 70) {
+        document.getElementById('result').value = 'B';
+    } else if (sum >= 60) {
+        document.getElementById('result').value = 'C';
+    } else if (sum >= 50) {
+        document.getElementById('result').value = 'D';
     } else {
-        document.write('F');
+        document.getElementById('result').value = 'FAIL';
+        
     }
 }
