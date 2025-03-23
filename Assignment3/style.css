@@ -1,0 +1,62 @@
+.content-table {
+    
+    border: 1px solid black;
+        border-collapse: collapse;
+        background-color: black;
+    }
+    
+    .content-table td {
+        color: white;
+    }
+    
+    .content-table td:first-child {
+        color: black;
+    }
+    
+    .content-table td:nth-child(2),
+    .content-table td:nth-child(3) {
+        color: white; 
+    }
+    h1, h2, h3 {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        width: 80%;  
+        display: inline-block;  
+        border-radius: 10px; 
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    p{
+        font-size: 15px
+    }
+    .table-content {
+        background-image: url('pic2.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        color: white;
+        padding: 5px;
+    }
+    form input:last-of-type {
+        border-bottom: 2px solid black;
+    }
+    .box {
+        display: inline-block;
+        width: 100px; 
+        height: 20px; 
+        margin-top: 10px;
+        background-color: #f0f0f0; 
+        border: 1px solid black; 
+        border-radius: 0px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
