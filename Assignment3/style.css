@@ -1,3 +1,25 @@
+body {
+    background-image: url("images/bgImage.jpg");
+    background-size: cover; 
+    margin: 17px; 
+}
+#blue{
+    background-color: #000080;
+    width: 400px;
+    font-size: 16px;
+}
+.table3{
+    height: 200px;
+    background-color: white;
+}
+    
+.mtable{ 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(images/back2.jpg) 20 round;
+    height: 5cm;
+    background-color: white;
+}
 .content-table {
     
     border: 1px solid black;
