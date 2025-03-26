@@ -24,10 +24,17 @@ echo strlen("Hello world!");
 echo("<br>");
 //checking position
 echo strpos("Display this","this");
+echo("<br>");
 // date function 
+$check=date("Y");
+$check_month=date("M");
+$check_day=date("D");
+$check_day2=date("d");
 
-
-
+echo "$check" . "<br>";
+echo "$check_month". "<br>";
+echo "$check_day2"  ;
+echo "$check_day" . "<br>";
 ?>
 </body>
 </html>
