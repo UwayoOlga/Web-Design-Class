@@ -1,46 +1,68 @@
-
-function calculateTotal() {
-    
-    var courseWork = parseFloat(document.getElementById('courseWork').value);
-    var midTerm = parseFloat(document.getElementById('midTerm').value);
-    var finalExam = parseFloat(document.getElementById('finalExam').value);
-
-    
-    if (isNaN(courseWork) || isNaN(midTerm) || isNaN(finalExam)) {
-        alert("Please enter valid numbers for all fields.");
-        return;
+function getInputValue(id, maxScore) {
+    try {
+        const value = document.getElementById(id).value;
+        const num = parseInt(value);
+        
+        if (isNaN(num)) {
+            throw new Error(`Please enter a valid number for ${id}`);
+        }
+        if (num < 0 || num > maxScore) {
+            throw new Error(`Please enter a value between 0 and ${maxScore} for ${id}`);
+        }
+        
+        return num;
+    } catch (error) {
+        alert(error.message);
+        document.getElementById(id).value = ""; 
+        document.getElementById(id).focus();  
+        throw error;  
     }
-
-    var total = courseWork + midTerm + finalExam;
-
-    
-    alert("Total Marks: " + total);
 }
 
-
-function calculateAverage() {
-   
-    var courseWork = parseFloat(document.getElementById('courseWork').value);
-    var midTerm = parseFloat(document.getElementById('midTerm').value);
-    var finalExam = parseFloat(document.getElementById('finalExam').value);
-
-    
-    if (isNaN(courseWork) || isNaN(midTerm) || isNaN(finalExam)) {
-        alert("Please enter valid numbers for all fields.");
-        return;
+function CalculateTotal() {
+    try {
+        var coursework = getInputValue("coursework", 30);
+        var midterm = getInputValue("midterm", 30);
+        var finalexam = getInputValue("finalexam", 40);
+        
+        var total = coursework + midterm + finalexam;
+        document.getElementById("total").value = total;
+    } catch (e) {
+       
     }
-
-    
-    var average = (courseWork + midTerm + finalExam) / 3;
-
-    
-    alert("Average Marks: " + average.toFixed(2));
 }
-function clearFields() {
-    
-    document.getElementById('courseWork').value = '';
-    document.getElementById('midTerm').value = '';
-    document.getElementById('finalExam').value = '';
-  
-    document.querySelector('form').reset();
+
+function CalculateAverage() {
+    try {
+        var coursework = getInputValue("coursework", 30);
+        var midterm = getInputValue("midterm", 30);
+        var finalexam = getInputValue("finalexam", 40);
+        
+        var average = (coursework + midterm + finalexam) / (30 + 30 + 40) * 100;
+        document.getElementById("average").value = average.toFixed(2) + "%";
+    } catch (e) {
+        
+    }
+}
+
+function GradeButton() {
+    try {
+        var coursework = getInputValue("coursework", 30);
+        var midterm = getInputValue("midterm", 30);
+        var finalexam = getInputValue("finalexam", 40);
+        var total = coursework + midterm + finalexam;
+        var percentage = (total / 100) * 100;  
+
+        if (percentage >= 70) {
+            document.getElementById("grade").value = "A";
+        } else if (percentage >= 60) {
+            document.getElementById("grade").value = "B";
+        } else if (percentage >= 50) {
+            document.getElementById("grade").value = "C";
+        } else {
+            document.getElementById("grade").value = "Failed";
+        }
+    } catch (e) {
+        
+    }
 }
