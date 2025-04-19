@@ -1,0 +1,59 @@
+body{
+    overflow: hidden;
+}
+.outer-container {
+    border-top: 20px solid #808080; 
+    border-left: 20px solid #808080; 
+    border-bottom: 20px solid #333; 
+    border-right: 20px solid #333;  
+    padding: 2px;  
+    margin: 20px auto;  
+    display: flex;  
+    height: 600px;
+}
+
+.login-form {   
+    flex: 1;  
+    padding: 15px;
+    border: 15px solid #808000;  
+    border-radius: 20px;
+    box-sizing: border-box; 
+    background-image: url('login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+}
+
+.registration-form {
+     
+    flex: 1;  
+    padding: 15px;
+    border: 15px solid #808000;  
+    border-radius: 20px;
+    box-sizing: border-box; 
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#h1login{
+    font-size: 50px;
+    margin-top: 120px;
+    font-family: 'Courier Prime', monospace;
+}
+#loginform{
+    font-size: 30px; 
+    margin-right: 50px; 
+    border: 15px solid #D3D3D3;  
+    height: 190px; 
+}
+#registrationForm{
+    color: white;
+    border: 15px solid #D3D3D3;  
+
+}
+#regD{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier Prime', monospace; 
+}
